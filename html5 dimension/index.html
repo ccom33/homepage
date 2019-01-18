@@ -9,11 +9,29 @@
 		<title>Dimension by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+<!--        스크립트 정의 -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="assets/js/jquery.bxslider.min.js"></script>
+<!--        css 정의 -->
+        <link rel="stylesheet" href="assets/css/jquery.bxslider.min.css">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/w3.css" >
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+<!--        폰트 정의-->
+		<link href="https://fonts.googleapis.com/css?family=Coiny" rel="stylesheet">
+<!--        noscript 정의 -->
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+            <style>
+/*          폰트 넣는곳      */
+                body {
+                    font-family:'Coiny', cursive;
+                }
+                h2 {
+                    font-family:'Coiny', cursive;
+                }
+                .mySlides {display:none}
+            </style>
 	</head>
-	<body class="is-preload">
+    <body class="is-preload">
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -21,7 +39,7 @@
 				<!-- Header -->
 					<header id="header">
 						<div class="logo">
-							<span class="icon fa-diamond"></span>
+							<span class="icon fa-film"></span>
 						</div>
 						<div class="content">
 							<div class="inner">
@@ -33,11 +51,11 @@
 						<nav>
 							<ul>
 								<li><a href="#intro">프롤로그</a></li>
-								<li><a href="#work">분석결과</a></li>
-								<li><a href="#about">코드</a></li>
-								<li><a href="#contact">구성원</a></li>
-                                <li><a href="#credit">크레딧</a></li>
-                                <li><a href="#work">고맙습니다</a></li>
+								<li><a href="#work1">분석결과1</a></li>
+								<li><a href="#work2">분석결과2</a></li>
+								<li><a href="#work3">분석결과3</a></li>
+                                <li><a href="#complete">결론</a></li>
+                                <li><a href="#copyright">출처</a></li>
 								<!--<li><a href="#elements">Elements</a></li>-->
 							</ul>
 						</nav>
@@ -48,13 +66,32 @@
 
 						<!-- Intro -->
 							<article id="intro">
-								<h2 class="major">Intro</h2>
+								<h2 class="major">프롤로그</h2>
 								<span class="image main">
+                                    <div class="w3-content" style="max-width:800px">
+                                      <img class="mySlides" src="images/%EC%8A%A4%ED%8C%8C%EC%9D%B4%EB%8D%94%EB%A7%A8_%ED%99%88%EC%BB%A4%EB%B0%8D.png">
+                                      <img class="mySlides" src="images/%EC%8A%A4%ED%8C%8C%EC%9D%B4%EB%8D%94%EB%A7%A8_%ED%99%88%EC%BB%A4%EB%B0%8D.png">
+                                      <img class="mySlides" src="images/%ED%83%9D%EC%8B%9C%EC%9A%B4%EC%A0%84%EC%82%AC.png" >
+                                    </div>
+
+                                    <div class="w3-center">
+                                      <div class="w3-section">
+                                        <button class="w3-btn" onclick="plusDivs(-1)">❮ Prev</button>
+                                        <button class="w3-btn" onclick="plusDivs(1)">Next ❯</button>
+                                      </div>
+                                      <button class="w3-btn demo" onclick="currentDiv(1)">1</button> 
+                                      <button class="w3-btn demo" onclick="currentDiv(2)">2</button> 
+                                      <button class="w3-btn demo" onclick="currentDiv(3)">3</button> 
+                                    </div>
+                                        
+                                    
+                                    
+                                    <!--
                                     <img class="mySlides" src="images/%EA%B0%80%EB%94%94%EC%96%B8%EC%A6%88%EC%98%A4%EB%B8%8C%EA%B0%A4%EB%9F%AD%EC%8B%9C.png" width="75%">
                                     
                                     <img class="mySlides" src="images/%EA%B5%B0%ED%95%A8%EB%8F%84.png" alt="">
                                    
-                                    <img class="mySlides" src="images/%EC%8A%A4%ED%8C%8C%EC%9D%B4%EB%8D%94%EB%A7%A8_%ED%99%88%EC%BB%A4%EB%B0%8D.png" alt="">
+                                    <img class="mySlides" src="images/%EC%8A%A4%ED%8C%8C%EC%9D%B4%EB%8D%94%EB%A7%A8_%ED%99%88%EC%BB%A4%EB%B0%8D.png" alt="">--
                                     
                                     <img class="mySlides" src="images/%EC%8B%A0%EA%B3%BC%ED%95%A8%EA%BB%98.png" alt="">
                                     
@@ -64,37 +101,38 @@
                                    
                                     <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
                                     <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+-->
                                 </span>
 								<p>Aenean ornare velit lacus, ac varius enim ullamcorper eu. Proin aliquam facilisis ante interdum congue. Integer mollis, nisl amet convallis, porttitor magna ullamcorper, amet egestas mauris. Ut magna finibus nisi nec lacinia. Nam maximus erat id euismod egestas. By the way, check out my <a href="#work">awesome work</a>.</p>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non, bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.</p>
 							</article>
 
-						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
+						<!-- Work1 -->
+							<article id="work1">
+								<h2 class="major">분석결과1</h2>
 								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
 								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
 								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
-							<!-- </article> -->
+							 </article> 
 
-						<!-- Work --> 
-							<!--<article id="work"> -->
-								<h2 class="major">work</h2>
+						<!-- Work2 --> 
+							<article id="work2"> 
+								<h2 class="major">분석결과2</h2>
 								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
 								<p>Adipiscing magna sed dolor elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices.</p>
 								<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet feugiat tempus.</p>
 							</article>
 
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
+						<!-- work3 -->
+							<article id="work3">
+								<h2 class="major">분석결과3</h2>
 								<span class="image main"><img src="images/pic03.jpg" alt="" /></span>
 								<p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. Integer sollicitudin mauris nec lorem luctus ultrices. Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
 							</article>
 
-						<!-- Contact -->
-							<article id="contact">
-								<h2 class="major">Contact</h2>
+						<!-- complete -->
+							<article id="complete">
+								<h2 class="major">complete</h2>
 								<form method="post" action="#">
 									<div class="fields">
 										<div class="field half">
@@ -123,8 +161,8 @@
 								</ul>
 							</article>
 
-						<!-- Elements -->
-							<article id="credit">
+						<!-- copyright -->
+							<article id="copyright">
 								<h2 class="major">크레딧</h2>
 
 								<section>
@@ -369,7 +407,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 				<!-- Footer -->
 					<footer id="footer">
-						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						<p class="copyright">&copy; copyright OUR All Right Reserved: <a href="https://html5up.net">HTML5 UP</a>.</p>
 					</footer>
 
 			</div>
@@ -384,24 +422,74 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
             <script>
-var slideIndex = 1;
-showDivs(slideIndex);
+    var slideIndex = 1;
+    showDivs(slideIndex);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  x[slideIndex-1].style.display = "block";  
-}
-</script>
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+    </script>
+        
+    <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-white", "");
+      }
+      x[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " w3-white";
+    }
+    </script>
+        
+    <script>
+    $(document).ready(function(){
+    $('.bxslider').bxSlider({
+      infiniteLoop: false,
+      hideControlOnEnd: true});
+    });
+    </script>
+    <script type="text/javascript">
+    //<![CDATA[
+    $(document).ready(function(){
+        //$('.bxslider').bxSlider();
+
+         $('.bxslider').bxSlider({
+            infiniteLoop: false,
+            hideControlOnEnd: true
+        });
+    });
+    //]]>
+    </script>
+
 
 	</body>
 </html>
